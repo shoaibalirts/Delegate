@@ -1,15 +1,17 @@
-﻿namespace ClassLibrary1
+﻿using System;
+
+namespace ClassLibrary1
 {
     public class Sample
     {
         // target method
-        public int Add(int a, int b)
+        public void Add(int a, int b)
         {
-            return a + b;
+            Console.WriteLine($"Addition of {a} and {b} is: {a + b}");
         }
-        public int Subtract(int a, int b)
+        public void Multiply(int a, int b)
         {
-            return b - a;
+            Console.WriteLine($"Multiplication of {a} and {b} is: {a * b}");
         }
     }
 
